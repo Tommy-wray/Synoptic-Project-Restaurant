@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 export default function InteractiveList() {
   const classes = useStyles();
   const foodItems = useTracker(() => foodItemsCollection.find({}).fetch());
@@ -20,25 +21,26 @@ export default function InteractiveList() {
       case "Starter":
         return (
           <ListItem>
-            <ListItemText primary={`${foodItem.name} ${foodItem.price}`} />
+            <ListItemText primary={`${foodItem.name} £${foodItem.price}`} />
+            
           </ListItem>
         );
       case "Main":
         return (
           <ListItem>
-            <ListItemText primary={`${foodItem.name} ${foodItem.price}`} />
+            <ListItemText primary={`${foodItem.name}  £${foodItem.price}`} />
           </ListItem>
         );
       case "Sides":
         return (
           <ListItem>
-            <ListItemText primary={`${foodItem.name} ${foodItem.price}`} />
+            <ListItemText primary={`${foodItem.name}  £${foodItem.price}`} />
           </ListItem>
         );
       case "Drinks":
         return (
           <ListItem>
-            <ListItemText primary={`${foodItem.name} ${foodItem.price}`} />
+            <ListItemText primary={`${foodItem.name}  £${foodItem.price}`} />
           </ListItem>
         );
     }
