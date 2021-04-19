@@ -21,6 +21,8 @@ export default function Nav() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  
   return (
     <Router>
     <Paper square>
@@ -37,6 +39,7 @@ export default function Nav() {
         <Link to="/Book-Table"><Tab label="Book Table" /></Link>
         <Link to="/Contact-us"><Tab label="Contact us" /></Link>
 
+
       </Tabs>
     </Paper>
 
@@ -45,6 +48,7 @@ export default function Nav() {
     <Route path='/Current-Order'><CurrentOrder/></Route>
     <Route path='/Book-Table'><BookTable/></Route>
     <Route path='/Contact-us'><Contact/></Route>
+
   </Router>
   );
 }
