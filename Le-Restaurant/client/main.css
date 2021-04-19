@@ -1,4 +1,10 @@
+*{
+     font-family: "Palatino";
+}
 body {
   padding: 10px;
-  font-family: sans-serif;
+}
+.logo{
+  max-height: 8rem;
+  max-width: 8rem;
 }
