@@ -41,13 +41,16 @@ export default () => {
   };
 
   return (
+  <div><h1>Current order</h1>
     <div className="c-currentOrder">
+      
         <OrderFood
           setOrder={setOrder}
           setTotalCost={setTotalCost}
           totalCost={totalCost}
         />
       <div className="c-running-total">
+
         {order.map((item) => {
           return <p>{item}</p>;
         })}
@@ -77,6 +80,7 @@ export default () => {
           Please ensure that you have selected some food !
         </Alert>
       </Snackbar>
+    </div>
     </div>
   );
 };

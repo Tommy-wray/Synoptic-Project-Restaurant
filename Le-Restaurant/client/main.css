@@ -12,6 +12,11 @@ h1{
   text-align: center;
 }
 
+h2{
+  color: #ff9f1c;
+  font-size:1rem;
+}
+
 .c-logo{
   max-height: 8rem;
   max-width: 8rem;
@@ -49,6 +54,8 @@ h1{
 .c-currentOrder{
   display: flex;
   justify-content: center;
+  margin: auto;
+  max-width: 75%;
 }
 
 .c-orderFood{
@@ -73,6 +80,7 @@ h1{
 .c-placedOrders{
   display: flex;
   justify-content: right;
+  max-width: 30%;
 }
 
 .c-bookTable-form{
