@@ -24,7 +24,7 @@ export default () => {
         <label>Pick a date</label>
         <br />
 
-        <input type="date" name="date" required />
+        <input type="date" name="date" required min="2021-04-21" />
         <br />
 
         <button type="submit">Book Table</button>

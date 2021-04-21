@@ -8,7 +8,7 @@ import {
   Link
 } from "react-router-dom";
 
-import Home from "./Home";
+import Home from './Home';
 import Contact from './Contact';
 import Menu from './Menu';
 import BookTable from './BookTable';
@@ -22,7 +22,13 @@ export default function Nav() {
     setValue(newValue);
   };
 
-  
+  const logout = () => {
+    Meteor.logout();
+    if (Meteor.user() === null) {
+      console.log("logout successful");
+    }
+  };
+
   return (
     <Router>
     <Paper square>
@@ -38,6 +44,8 @@ export default function Nav() {
         <Link to="/Current-Order"><Tab label="Current  order" /></Link>
         <Link to="/Book-Table"><Tab label="Book Table" /></Link>
         <Link to="/Contact-us"><Tab label="Contact us" /></Link>
+        <Link to="/Logout" onClick={logout}><Tab label="Logout" /></Link>
+
 
 
       </Tabs>
@@ -48,6 +56,7 @@ export default function Nav() {
     <Route path='/Current-Order'><CurrentOrder/></Route>
     <Route path='/Book-Table'><BookTable/></Route>
     <Route path='/Contact-us'><Contact/></Route>
+
 
   </Router>
   );

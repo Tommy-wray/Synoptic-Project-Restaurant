@@ -78,3 +78,16 @@ h1{
   display: flex;
   justify-content: center;
 }
+
+.c-home{
+  max-width: 70%;
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+}
+
+.c-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
