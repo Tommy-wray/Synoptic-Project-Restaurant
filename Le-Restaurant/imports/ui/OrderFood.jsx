@@ -11,35 +11,36 @@ export default function CheckboxLabels(props) {
 
   const handleChange = (event) => {
     let tempOrder = newOrder;
-    tempOrder.includes(event.target.name,event.target.value);
-    if (tempOrder.indexOf(event.target.name,event.target.value) === -1) {
-      tempOrder.push(event.target.name,event.target.value);
-    } else {
-      const pos = tempOrder.indexOf(event.target.name,event.target.value);
-      tempOrder.splice(pos, 1);
+    tempOrder.includes(event.target.name, event.target.value);
+    console.log(tempOrder.includes(event.target.name, 4))
+    if (tempOrder.includes(event.target.name,4)){
+        console.log("you cannot order any more of this food")
+    }else{
+        tempOrder.push(event.target.name);
+       props.setTotalCost((props.totalCost += Number(event.target.value)))
+
     }
+    
     setNewOrder(tempOrder);
-    setState({ ...state, [[event.target.name] [event.target.value] ]: event.target.checked });
+    // setState({ ...state, [[event.target.name] [event.target.value] ]: event.target.checked });
     props.setOrder([...newOrder]);
   };
   const foodItems = useTracker(() => foodItemsCollection.find({}).fetch());
   const result = foodItems.map((foodItem) => {
     return (
-        <div>
+      <div className="c-orderFood">
       <FormControlLabel
-        control={<Checkbox onInput={handleChange} name={foodItem.name} value={foodItem.price}/>}
+      control={
+        <Checkbox
+        onInput={handleChange}
+        name={foodItem.name}
+            value={foodItem.price}
+          />
+        }
         label={`${foodItem.name}  £${foodItem.price}`}
-  
-      />      
-    <select name="quantity" >
-     <option value="1">1</option>
-     <option value="2">2</option>
-     <option value="3">3</option>
-     <option value="4">4</option>     
-     <option value="5">5</option>
-    </select>
-    </div>
-    ) 
+      />
+      </div>
+    );
   });
 
   return <FormGroup>{result}</FormGroup>;
