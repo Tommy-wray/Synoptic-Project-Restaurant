@@ -1,12 +1,120 @@
 *{
      font-family: "Palatino";
+     color: #011627;
 }
 
 body {
   padding: 10px;
 }
 
+h1{
+  color: #e71d36;
+  text-align: center;
+}
+
+h2{
+  color: #ff9f1c;
+  font-size:1rem;
+}
+
 .c-logo{
   max-height: 8rem;
   max-width: 8rem;
+  display:flex;
+  margin: auto;  
+  padding-bottom: 15px;
+}
+
+.c-login-form{
+  max-width: 12rem;
+  max-height: 12rem;
+  border-style: groove;
+  border-color: #011627;
+  margin:auto;
+  padding:10px ;
+}
+
+.c-loginForm-label{
+  padding-right: 1rem;
+}
+
+.c-loginForm-Button{
+  margin-top:10px ;
+  margin-left: 10px;
+  height: 1.5rem;
+  width: 4rem;
+  border-radius: 0.2rem;
+}
+
+.c-loginForm-inputs{
+  margin-top: 10px;
+  margin: 10px;
+}
+
+.c-currentOrder{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 75%;
+}
+
+.c-orderFood{
+  display: flex;
+  justify-content: left;
+}
+
+.c-running-total{
+  display: flex;
+  justify-content: center;
+  justify-content:flex-start;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.c-confirmOrderButton{
+  max-width: 20rem;
+  max-height: 1rem;
+  margin: 20px;
+}
+
+.c-placedOrders{
+  display: flex;
+  justify-content: right;
+  max-width: 30%;
+}
+
+.c-bookTable-form{
+  max-width: 20rem;
+  max-height: 40rem;
+  border-style: groove;
+  border-color: #011627;
+  margin:auto;
+  padding:10px ;
+}
+.c-contact{
+  max-width: 20rem;
+  margin: auto;
+}
+.c-contact-content{
+  text-align: center;
+}
+
+.c-menu-list{
+  max-width: 20rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.c-home{
+  max-width: 70%;
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+}
+
+.c-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

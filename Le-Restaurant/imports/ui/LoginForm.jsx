@@ -17,28 +17,33 @@ export const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={submit} className="c-login-form">
-      <label className="c-loginForm-label">Username</label>
-      <input
-        type="text"
-        placeholder="Username"
-        name="username"
-        className="c-loginForm-inputs"
-        required
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <br />
-      <label className="c-loginForm-label">Password</label>
-      <input
-        type="password"
-        placeholder="Password"
-        name="password"
-        className="c-loginForm-inputs"
-        required
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <br />
-      <button type="submit" className="c-loginForm-Button">Log In</button>
-    </form>
+    <div>
+      <h1>Welcome to LeRestaurant! <br/>Please login</h1>
+      <form onSubmit={submit} className="c-login-form">
+        <label className="c-loginForm-label">Username</label>
+        <input
+          type="text"
+          placeholder="Username"
+          name="username"
+          className="c-loginForm-inputs"
+          required
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <br />
+        <label className="c-loginForm-label">Password</label>
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          className="c-loginForm-inputs"
+          required
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <br />
+        <button type="submit" className="c-loginForm-Button">
+          Log In
+        </button>
+      </form>
+    </div>
   );
 };
