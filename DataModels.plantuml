@@ -1,0 +1,24 @@
+@startuml diagram
+left to right direction
+entity user {
+  id STRING
+  createdAt DATE
+  username STRING
+  password OBJECT
+  loginTokens OBJECT
+  
+}
+entity orders {
+  id STRING
+  userId STRING
+  totalCost FLOAT
+  order ARRAY [food_item]
+}
+entity food_item {
+  id STRING
+  course STRING
+  name STRING
+  price FLOAT
+}
+
+@enduml
