@@ -42,23 +42,25 @@ export default () => {
 
   return (
     <div className="c-currentOrder">
-      <div>
         <OrderFood
           setOrder={setOrder}
           setTotalCost={setTotalCost}
           totalCost={totalCost}
         />
-
+      <div className="c-running-total">
         {order.map((item) => {
           return <p>{item}</p>;
         })}
 
-        <p>{Number.parseFloat(totalCost).toFixed(2)}</p>
+        £{Number.parseFloat(totalCost).toFixed(2)}
         <br />
+        <div className="c-confirmOrderButton">
         <Button type="button" onClick={submit} variant="contained">
           Confirm and place order !
         </Button>
-      </div>
+        </div>
+        </div>
+      
 
       <div className="c-placedOrders">
         <PlacedOrders/>
@@ -72,7 +74,7 @@ export default () => {
       </Snackbar>
       <Snackbar open={openFail} autoHideDuration={5000} onClose={handleClose}>
         <Alert severity="error">
-          Please ensure that all fields are populated
+          Please ensure that you have selected some food !
         </Alert>
       </Snackbar>
     </div>

@@ -53,7 +53,26 @@ h1{
 
 .c-orderFood{
   display: flex;
+  justify-content: left;
+}
+
+.c-running-total{
+  display: flex;
   justify-content: center;
+  justify-content:flex-start;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.c-confirmOrderButton{
+  max-width: 20rem;
+  max-height: 1rem;
+  margin: 20px;
+}
+
+.c-placedOrders{
+  display: flex;
+  justify-content: right;
 }
 
 .c-bookTable-form{
