@@ -77,6 +77,17 @@ h2{
   margin: 20px;
 }
 
+.c-updateOrder{
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  padding:10px;
+}
+
+.c-updateOrder input{
+  margin:10px;
+}
+
 .c-placedOrders{
   display: flex;
   justify-content: right;
