@@ -21,7 +21,7 @@ export default function InteractiveList() {
         <ListItem>
           <ListItemText
             primary={`Items ordered:  ${order.order} TotalCost: £${order.totalCost} `}
-            secondary={`Username: ${Meteor.user().username}   `}
+            secondary={`Username: ${Meteor.user().username}   Order ID:${order._id}`}
           />
           <IconButton
             edge="end"

@@ -1,0 +1,21 @@
+@startuml
+
+title LeRestaurant Use Case Diagram 
+
+left to right direction
+ :User:
+ (DB)
+ rectangle LeRestaurant {
+     User -- (Login)
+     User -- (create order)
+     User -- (Save order to DB)
+     User -- (Delete order)
+     User -- (Update order)
+     (Save order to DB) <--> DB : Create
+     (Update order) <--> DB : Uppdate
+     (Delete order) <--> DB : Delete
+     (Login) ..> DB : Read
+     
+ }
+ 
+@enduml
