@@ -46,6 +46,9 @@ export default () => {
     console.log(event.target.value);
   };
   const update = () => {
+    if (updateOrderID === "") {
+      setOpenFail(true);
+    }
     ordersCollection.update(updateOrderID, {
       userId: Meteor.userId(),
       order: order,
@@ -98,7 +101,7 @@ export default () => {
         </Snackbar>
         <Snackbar open={openFail} autoHideDuration={5000} onClose={handleClose}>
           <Alert severity="error">
-            Please ensure that you have selected some food !
+            Please ensure that have filled in all the fields!
           </Alert>
         </Snackbar>
       </div>
