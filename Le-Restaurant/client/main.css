@@ -1,130 +1,130 @@
-*{
-     font-family: "Palatino";
-     color: #011627;
+* {
+  font-family: "Palatino";
+  color: #011627;
 }
 
 body {
   padding: 10px;
 }
 
-h1{
+h1 {
   color: #e71d36;
   text-align: center;
 }
 
-h2{
+h2 {
   color: #ff9f1c;
-  font-size:1rem;
+  font-size: 1rem;
 }
 
-.c-logo{
+.c-logo {
   max-height: 8rem;
   max-width: 8rem;
-  display:flex;
-  margin: auto;  
+  display: flex;
+  margin: auto;
   padding-bottom: 15px;
 }
 
-.c-login-form{
+.c-login-form {
   max-width: 12rem;
   max-height: 12rem;
   border-style: groove;
   border-color: #011627;
-  margin:auto;
-  padding:10px ;
+  margin: auto;
+  padding: 10px;
 }
 
-.c-loginForm-label{
+.c-loginForm-label {
   padding-right: 1rem;
 }
 
-.c-loginForm-Button{
-  margin-top:10px ;
+.c-loginForm-Button {
+  margin-top: 10px;
   margin-left: 10px;
   height: 1.5rem;
   width: 4rem;
   border-radius: 0.2rem;
 }
 
-.c-loginForm-inputs{
+.c-loginForm-inputs {
   margin-top: 10px;
   margin: 10px;
 }
 
-.c-currentOrder{
+.c-currentOrder {
   display: flex;
   justify-content: center;
   margin: auto;
   max-width: 75%;
 }
 
-.c-orderFood{
+.c-orderFood {
   display: flex;
   justify-content: left;
 }
 
-.c-running-total{
+.c-running-total {
   display: flex;
   justify-content: center;
-  justify-content:flex-start;
+  justify-content: flex-start;
   flex-direction: column;
   margin: 10px;
 }
 
-.c-confirmOrderButton{
+.c-confirmOrderButton {
   max-width: 20rem;
   max-height: 1rem;
   margin: 20px;
 }
 
-.c-updateOrder{
+.c-updateOrder {
   display: flex;
   margin: 10px;
   flex-direction: column;
-  padding:10px;
+  padding: 10px;
 }
 
-.c-updateOrder input{
-  margin:10px;
+.c-updateOrder input {
+  margin: 10px;
 }
 
-.c-placedOrders{
+.c-placedOrders {
   display: flex;
   justify-content: right;
   max-width: 30%;
 }
 
-.c-bookTable-form{
+.c-bookTable-form {
   max-width: 20rem;
   max-height: 40rem;
   border-style: groove;
   border-color: #011627;
-  margin:auto;
-  padding:10px ;
+  margin: auto;
+  padding: 10px;
 }
-.c-contact{
+.c-contact {
   max-width: 20rem;
   margin: auto;
 }
-.c-contact-content{
+.c-contact-content {
   text-align: center;
 }
 
-.c-menu-list{
+.c-menu-list {
   max-width: 20rem;
   margin: auto;
   display: flex;
   justify-content: center;
 }
 
-.c-home{
+.c-home {
   max-width: 70%;
-  margin: auto; 
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-.c-images{
+.c-images {
   display: flex;
   justify-content: center;
   align-items: center;

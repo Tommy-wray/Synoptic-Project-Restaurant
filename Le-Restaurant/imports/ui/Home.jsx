@@ -38,9 +38,9 @@ const res = images.map((image) => {
 });
 export default () => {
   return (
-      <div className="c-home">
-        <h1>Welcome to Le Restaurant</h1>
-        {res}
-      </div>
+    <div className="c-home">
+      <h1>Welcome to Le Restaurant</h1>
+      {res}
+    </div>
   );
 };
