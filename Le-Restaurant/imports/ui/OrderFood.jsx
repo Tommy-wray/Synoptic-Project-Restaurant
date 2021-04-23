@@ -44,7 +44,7 @@ export default function CheckboxLabels(props) {
   return (
     <div>
       <h2>Click on a menu item to add to your order !</h2>
-      <FormGroup>{result}</FormGroup>;
+      <FormGroup>{result}</FormGroup>
     </div>
   );
 }
