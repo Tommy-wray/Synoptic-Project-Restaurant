@@ -21,7 +21,6 @@ export default function CheckboxLabels(props) {
     }
 
     setNewOrder(tempOrder);
-    // setState({ ...state, [[event.target.name] [event.target.value] ]: event.target.checked });
     props.setOrder([...newOrder]);
   };
   const foodItems = useTracker(() => foodItemsCollection.find({}).fetch());

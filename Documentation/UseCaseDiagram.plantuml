@@ -12,7 +12,7 @@ left to right direction
      User -- (Delete order)
      User -- (Update order)
      (Save order to DB) <--> DB : Create
-     (Update order) <--> DB : Uppdate
+     (Update order) <--> DB : Update
      (Delete order) <--> DB : Delete
      (Login) ..> DB : Read
      

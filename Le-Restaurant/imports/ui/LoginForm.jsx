@@ -18,7 +18,10 @@ export const LoginForm = () => {
 
   return (
     <div>
-      <h1>Welcome to LeRestaurant! <br/>Please login</h1>
+      <h1>
+        Welcome to LeRestaurant! <br />
+        Please login
+      </h1>
       <form onSubmit={submit} className="c-login-form">
         <label className="c-loginForm-label">Username</label>
         <input

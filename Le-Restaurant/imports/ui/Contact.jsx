@@ -12,7 +12,10 @@ export default () => {
         vitae imperdiet. Praesent sit amet dignissim eros, mollis congue diam.
         Sed non facilisis purus.
       </p>
-      <p className="c-contact-content">Tel 41924 424 456  <br/>Email leRestaurant@gmail.com</p>
+      <p className="c-contact-content">
+        Tel 41924 424 456 <br />
+        Email leRestaurant@gmail.com
+      </p>
     </div>
   );
 };
